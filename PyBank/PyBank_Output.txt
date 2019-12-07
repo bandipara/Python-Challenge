@@ -1,0 +1,5 @@
+Greatest Increase in Profits:  ['Sep-2013', '-1196225']
+Greatest Decrease in Profits:  ['Feb-2012', '1170593']
+86
+38382578
+446309.0465116279
