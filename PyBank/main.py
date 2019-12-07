@@ -6,10 +6,8 @@ import csv
 import sys
 
 
-
-#csvpath = os.path.join("Resources", "netflix_ratings.csv")
-csvpath = os.path.join("D:\Rutgers-lab\Homework\Python-Challenge\PyBank","Resources", "budget_data.csv")
-#print(csvpath)
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+csvpath = os.path.join("Resources", "budget_data.csv")
 
 count = 0
 total = 0
@@ -36,6 +34,8 @@ with open(csvpath, newline="") as csvfile:
 
 sys.stdout = open(os.path.join(sys.path[0], "PyBank_Output.txt"), "w")
 
+print("Financial Analysis")
+print("----------------------------")
 print("Greatest Increase in Profits: ", min_row)
 print("Greatest Decrease in Profits: ", max_row)
 #d_col
